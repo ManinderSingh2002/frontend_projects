@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+ 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container parent_container">
+        <h2 class="head_content">STUDENT REGISTRATION FORM</h2>
+
+        
+  <div class="form_container container">
+<form action="#">
+  
+        <br>
+       <div class="row">
+        <div class="col-sm-2 col-4 col-lg-2 fw-bold">FIRST NAME
+        </div>
+        <div class="col-8 col-lg-3 col-sm-4 ">
+ <input type="text" name="fname" id="fname">
+        </div>
+        <div class="col-lg-7 col-sm-6 fw-bold">(at least 3 characters a-z and first letter capital)
+        </div>
+       </div>
+
+    <br>
+
+       <div class="row">
+        <div class="col-lg-2 col-sm-2 col-4 fw-bold">LAST NAME
+        </div>
+        <div class="col-8 col-lg-3 col-sm-4">
+ <input type="text" name="lname" id="lname">
+        </div>
+        <div class="col-lg-7 col-sm-6 fw-bold">(at least 3 characters a-z and first letter capital)
+        </div>
+       </div>
+
+<br>
+       <div class="row">
+        <div class="col-lg-2 col-sm-3  fw-bold">DATE OF BIRTH
+        </div>
+        <div class="col-lg-1 col-sm-3 col-4">
+            <select name="day" id="day">
+                <option value="day">
+                    Day
+          <script>
+            for(var i=1;i<=31;i++){
+                document.write(`<option value=${i} id="day">${i}</option>`);
+            }
+          </script>
+             
+            </option>
+              </select>
+        </div>
+
+        <div class="col-lg-1 col-sm-3 col-4">
+            <select name="month" id="month">
+      <option value="month">
+          Month
+<script>
+ var m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+for(var i=0;i<m.length;i++){
+    document.write(`<option value=${m[i]} id="month">${m[i]}</option>`);
+}
+</script>
+
+      </option>
+              </select>
+        </div>
+       
+        <div class="col-lg-1 col-sm-3 col-xs-1 col-4">
+            <select name="year" id="year">
+   <option value="year">
+    Year
+     <script>
+         for(var i=1995;i<=2010;i++){
+                document.write(`<option value=${i} id="year">${i}</option>`);
+            }
+
+     </script>
+   </option>
+              </select>
+        </div>
+       
+
+        <br><br>
+
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-4 fw-bold"fw-bold>EMAIL ID
+            </div>
+            <div class="col-8 ">
+     <input type="email" name="email" id="eid">
+            </div>
+          
+           </div>
+
+
+           
+        <br><br>
+
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-4 fw-bold"fw-bold>MOBILE NUMBER
+            </div>
+            <div class="col-8 col-lg-3 col-sm-4 ">
+     <input type="numbers" name="mbnumber" maxlength="10" id="mno">
+            </div>
+            <div class="col-lg-7 col-sm-6 fw-bold">(10 digit number only)
+            </div>
+           </div>
+
+
+
+           <br><br>
+
+           <div class="row">
+            <div class="col-lg-2 col-sm-2 col-4 fw-bold">GENDER
+            </div>
+            <div class="col-lg-1 col-sm-2 col-4 ">
+                Male <input type="radio" name="gender" value="Male" id="m"> 
+            </div>
+            <div class="col-lg-2 col-sm-2 col-4 ">
+            Female <input type="radio" name="gender" value="Female" id="f">
+            </div>
+           </div>
+   
+           <br><br>
+
+           <div class="row">
+               <div class="col-lg-2 col-sm-2 fw-bold"fw-bold>ADDRESS
+               </div>
+               <div class="col-lg-10 ">
+       <textarea name="tarea" id="tarea" cols="30" rows="5" id="address"></textarea>
+               </div>
+            </div>
+
+              <br> <br> <br> <br> <br>  <br><br>
+               <div class="row">
+                <div class="col-lg-2 col-sm-2 col-4 fw-bold">PIN CODE
+                </div>
+                <div class="col-8 col-lg-3 col-sm-4">
+         <input type="numbers" name="pcode" id="pcode">
+                </div>
+                <div class="col-lg-7 col-sm-6 fw-bold">(6 digit number)
+                </div>
+               </div>
+
+
+               <br><br>
+               <div class="row">
+                <div class="col-lg-2 col-sm-2 col-4 fw-bold">STATE
+                </div>
+                <div class="col-8 col-lg-3 col-sm-4">
+         <input type="text" name="state" id="state">
+                </div>
+                <div class="col-lg-7 col-sm-6 fw-bold">(at least 3 characters a-z and A-Z)
+                </div>
+               </div>
+
+               <br><br>
+               <div class="row">
+                <div class="col-lg-2 col-sm-2 col-4 fw-bold">COUNTRY
+                </div>
+                <div class="col-8 ">
+         <input type="text" name="country" value="India" id="country">
+                </div>
+               </div>
+
+
+        
+  
+        <br><br>
+       <div class="row">
+        <div class="col-lg-2 col-sm-2 fw-bold">HOBBIES
+        </div>
+        <div class="col ">
+            <label for="hb1">Drawing</label>
+            <input type="checkbox" id="hb1" name="draw" value="Drawing" class="hob">&emsp;
+            <label for="hb2"> Singing</label>
+            <input type="checkbox" id="hb2" name="sing" value="Singing" class="hob">&emsp;
+            <label for="hb3">Dancing</label>
+            <input type="checkbox" id="hb3" name="dance" value="Dancing" class="hob">&emsp;
+            <label for="hb4">Sketching</label>
+            <input type="checkbox" id="hb3" name="sketch" value="Sketching" class="hob">&emsp;
+            <label for="hb5">Others</label>
+            <input type="checkbox" id="hb5" name="others" value="Others" class="hob">
+        </div>
+       </div>
+
+       <br><br>
+       <div class="row">
+        <div class="col-lg-2  fw-bold">QUALIFICATION
+        </div>
+<div class="col" style="border:2px solid darkblue">
+
+<div class="row">
+    <div class="col-lg-2 col-sm-2 fw-bold">SI.No.</div> <div class="col-lg-2 col-sm-2 fw-bold ">Examination</div> <div class="col-lg-2 col-sm-2 fw-bold">Board</div> <div class="col-lg-2 col-sm-2 fw-bold">Percentage</div> <div class=" col-sm-3 col-lg-3 fw-bold">Year of Passing</div>
+
+   
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-2 col-sm-2">1</div> <div class="col-lg-2 col-sm-2">Class X</div> <div class="col-lg-2 col-sm-2"><input type="text" id="b1" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="p1" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="y1" maxlength="4" ></div>
+
+</div>
+<div class="row">
+
+    <div class="col-lg-2 col-sm-2">2</div> <div class="col-lg-2 col-sm-2">Class XII</div> <div class="col-lg-2 col-sm-2"><input type="text" id="b2" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="p2" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="y2"  maxlength="4"></div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="col-lg-2 col-sm-2">3</div> <div class="col-lg-2 col-sm-2">Graduation</div> <div class="col-lg-2 col-sm-2"><input type="text" id="b3" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="p3" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="y3"  maxlength="4"></div>
+
+</div>
+<div class="row">
+
+    <div class="col-lg-2 col-sm-2">4</div> <div class="col-lg-2 col-sm-2">Masters</div> <div class="col-lg-2 col-sm-2"><input type="text" id="b4" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="p4" ></div> <div class="col-lg-2 col-sm-2"><input type="text" id="y4"  maxlength="4"></div>
+
+</div>
+<div class="row">
+
+    <div class="col-lg-2 col-sm-2"></div> <div class="col-lg-2 col-sm-2"></div> <div class="col-lg-2 col-sm-2">(at least 3 char)</div> <div class="col-lg-2 col-sm-2">(upto 2 decimal)</div> <div class="col-lg-2 col-sm-2"></div>
+
+</div>
+       </div>
+
+       </div>
+
+
+   <br><br><br><br><br><br><br><br>
+       
+
+       
+
+
+       <div class="row">
+        <div class="col-lg-2 col-sm-2 fw-bold">COURSES <br> APPLIED FOR
+        </div>
+        <div class="col-lg-1 col-sm-2  col-3">
+            BCA <input type="radio" name="cource" value="BCA" id="bca"> 
+        </div>
+        <div class="col-lg-1 col-sm-2 col-4">
+        B.Com <input type="radio" name="cource" value="B.Com" id="bcom">
+        </div>
+        <div class="col-lg-1 col-sm-2 col-3">
+            B.Sc <input type="radio"name="cource" value="B.Sc" id="bsc"> 
+        </div>
+        <div class="col-lg-1 col-sm-2 col-3">
+        B.A<input type="radio" name="cource" value="B.A" id="ba">
+        </div>
+       
+       </div>
+     
+
+
+<br><br>
+
+<div class="row justify-content-center">
+    <div class="col-lg-1 col-sm-2 col-4">
+        <input class="btn btn-secondary" type="submit" value="Submit" id="submit">
+     
+    </div>
+    <div class="col-lg-1  col-sm-2 col-4">
+        <input class="btn btn-secondary" type="reset" value="Reset" id="reset">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+  </div>
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
+
+
